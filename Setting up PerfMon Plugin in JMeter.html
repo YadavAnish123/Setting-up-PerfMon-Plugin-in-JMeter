@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up PerfMon Plugin in JMeter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #008080;
+        }
+        h2 {
+            color: #4b0082;
+        }
+        ol {
+            margin-left: 20px;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Setting up PerfMon Plugin in JMeter</h1>
+        <ol>
+            <li>
+                <h2>Step 1: Add perfmon plugin in JMeter</h2>
+                <ol>
+                    <li>Download and add to JMeter lib and ext folder <a href="https://jmeter-plugins.org/wiki/PerfMon/" target="_blank">https://jmeter-plugins.org/wiki/PerfMon/</a></li>
+                    <li>Plugins Manager</li>
+                </ol>
+            </li>
+            <li>
+                <h2>Step 2: On server</h2>
+                <p>Download perform server agent <a href="https://github.com/undera/perfmon-age..." target="_blank">https://github.com/undera/perfmon-age...</a></p>
+            </li>
+            <li>
+                <h2>Step 3: Start the perfmon server agent</h2>
+                <p>Mac/Linux - Terminal - <code>sh startAgent.sh</code></p>
+                <p>Windows - <code>startAgent.bat</code></p>
+                <p>Check client can talk to server via port 4444</p>
+            </li>
+            <li>
+                <h2>Step 4: Create JMeter test to monitor Server Health</h2>
+            </li>
+            <li>
+                <h2>Step 5: Run and Validate</h2>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
